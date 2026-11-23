@@ -25,3 +25,7 @@ Examples:
 - `styles.css`: colors and layout
 - `app.js`: builds the bottle cards from `bottles.js`
 - `img/`: logo and bottle photos
+
+## 21+ age check
+
+Visitors must enter their date of birth (MM/DD/YYYY) before seeing the site. Anyone under 21 is turned away. A passed check is remembered on that phone or computer for 30 days. The code is in `agegate.js`; you don't need to change it.

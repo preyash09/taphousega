@@ -16,6 +16,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    try { if (Date.now() < Number(localStorage.getItem("th_age_ok"))) document.documentElement.classList.add("age-ok"); } catch (e) {}
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,6 +33,31 @@
   </script>
 </head>
 <body>
+
+<!-- 21+ age check (see agegate.js) -->
+<div class="agegate" id="agegate" role="dialog" aria-modal="true" aria-labelledby="ag-title" aria-describedby="ag-desc">
+  <div class="agegate-card">
+    <img src="img/logo.png" alt="" width="64" height="64">
+    <p class="agegate-kicker">The Tap House Liquor Shop</p>
+    <h2 id="ag-title">Are you 21 or older?</h2>
+    <p id="ag-desc">Enter your date of birth to visit this site.</p>
+    <form class="agegate-form" action="#" novalidate>
+      <fieldset>
+        <legend>Date of birth (MM/DD/YYYY)</legend>
+        <div class="dob">
+          <label for="ag-m"><span>Month</span><input id="ag-m" name="month" type="text" inputmode="numeric" pattern="[0-9]*" data-max="2" placeholder="MM" autocomplete="bday-month" required></label>
+          <span class="dob-slash" aria-hidden="true">/</span>
+          <label for="ag-d"><span>Day</span><input id="ag-d" name="day" type="text" inputmode="numeric" pattern="[0-9]*" data-max="2" placeholder="DD" autocomplete="bday-day" required></label>
+          <span class="dob-slash" aria-hidden="true">/</span>
+          <label for="ag-y" class="dob-year"><span>Year</span><input id="ag-y" name="year" type="text" inputmode="numeric" pattern="[0-9]*" data-max="4" placeholder="YYYY" autocomplete="bday-year" required></label>
+        </div>
+      </fieldset>
+      <p class="agegate-error" role="alert" hidden></p>
+      <button class="btn btn-gold" type="submit">Enter site</button>
+    </form>
+    <p class="agegate-fine">You must be of legal drinking age to enter. Please drink responsibly.</p>
+  </div>
+</div>
 
 <a class="skip" href="#main">Skip to content</a>
 
@@ -255,6 +283,7 @@
   </div>
 </dialog>
 
+<script src="agegate.js"></script>
 <script src="bottles.js"></script>
 <script src="app.js"></script>
 </body>

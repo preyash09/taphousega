@@ -260,3 +260,41 @@ body { --bar-h: 64px; }
   html { scroll-behavior: auto; }
   .card, .card-photo img, .sheet[open] { transition: none; animation: none; }
 }
+
+/* ---------- 21+ age check ---------- */
+html:not(.age-ok) body { overflow: hidden; }
+html.age-ok .agegate { display: none; }
+.agegate {
+  position: fixed; inset: 0; z-index: 1000;
+  display: grid; place-items: center; padding: 16px; overflow-y: auto;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(201, 162, 75, 0.18), transparent 60%),
+    var(--ink);
+  color: #f3ede2;
+}
+.agegate-card {
+  width: 100%; max-width: 420px; text-align: center;
+  background: var(--ink-2); border: 1px solid rgba(201, 162, 75, 0.35);
+  border-radius: 20px; padding: 32px 24px 24px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+.agegate-card img { width: 64px; height: 64px; border-radius: 14px; margin: 0 auto 14px; }
+.agegate-kicker { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-hi); }
+.agegate h2 { font-family: var(--serif); font-size: 30px; line-height: 1.15; margin: 6px 0 8px; color: #fff; }
+.agegate-card > p#ag-desc { margin: 0 0 20px; color: #cfc6b6; }
+.agegate fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.agegate legend { font-size: 14px; font-weight: 600; color: #e9e1d2; margin: 0 auto 10px; }
+.dob { display: flex; align-items: flex-end; justify-content: center; gap: 8px; }
+.dob label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #a99f8e; text-align: left; flex: 1 1 0; max-width: 84px; }
+.dob .dob-year { max-width: 112px; flex-grow: 1.4; }
+.dob input {
+  width: 100%; height: 52px; border-radius: 12px; text-align: center;
+  border: 1.5px solid #4a443b; background: var(--ink-3); color: #fff;
+  font: 600 20px/1 var(--sans); letter-spacing: .04em;
+}
+.dob input::placeholder { color: #6f675a; }
+.dob input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201, 162, 75, 0.25); }
+.dob-slash { font-size: 22px; color: #6f675a; padding-bottom: 12px; }
+.agegate-error { margin: 14px 0 0; color: #ffb4a6; font-size: 14px; font-weight: 500; }
+.agegate-form .btn { width: 100%; margin-top: 18px; }
+.agegate-fine { margin: 16px 0 0; font-size: 12px; color: #8f8676; }
