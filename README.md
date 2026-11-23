@@ -1,6 +1,6 @@
 # Tap House Bourbon Loyalty site
 
-The site for www.taphousega.com: a single page with the loyalty rules, this month's bonus-points bottles, and the single barrels on the shelf.
+The site for www.taphousega.com: a single page with the loyalty rules, this month's bonus-points bottles, and our Tap House Picks on the shelf.
 
 ## Changing the bottles
 
@@ -15,7 +15,7 @@ To add a photo: open the `img/bottles` folder, click **Add file → Upload files
 
 Examples:
 - Mark a bottle sold out: add `soldOut: true,` to its line.
-- Mark a Tap House Pick: add `pick: true,` to its line.
+- Every bottle on the site is a Tap House Pick, so give each new bottle `pick: true,` (that shows the gold tag).
 - Rename the bonus section for a new month: change `bonusTitle` near the top.
 
 ## Other files

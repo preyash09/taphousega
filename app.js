@@ -108,7 +108,6 @@
   var barrels = window.SINGLE_BARRELS || [];
   var filters = [
     { key: "all", label: "All", test: function () { return true; } },
-    { key: "pick", label: "Tap House Picks", test: function (b) { return b.pick; } },
     { key: "bourbon", label: "Bourbon", test: function (b) { return b.type === "bourbon"; } },
     { key: "rye", label: "Rye", test: function (b) { return b.type === "rye"; } },
     { key: "other", label: "Other", test: function (b) { return b.type && b.type !== "bourbon" && b.type !== "rye"; } }
