@@ -17,6 +17,7 @@ Examples:
 - Mark a bottle sold out: add `soldOut: true,` to its line.
 - Every bottle on the site is a Tap House Pick, so give each new bottle `pick: true,` (that shows the gold tag).
 - Rename the bonus section for a new month: change `bonusTitle` near the top.
+- Put a Tap House Pick on 10x points: add `points: "10x Points",` to its line. It shows in the 10x section too. Remove it when the month ends.
 
 ## Other files
 

@@ -16,7 +16,7 @@
     photo2   a second photo, shown when someone taps the bottle
     details  short facts, like ["9 Year", "110 Proof", "186 Bottles"]
     price    like "$64.99"
-    points   like "10x Points"
+    points   like "10x Points". A pick below with points also shows at the top of the 10x section.
     photo    file name in img/bottles
     type     bourbon, rye, tequila or whiskey (used by the filter buttons)
     search   words to search on taphouseliquor.com (the card links there)
@@ -44,10 +44,10 @@ window.BONUS_BOTTLES = [
 
 window.SINGLE_BARRELS = [
   // Newest Tap House Picks (fall 2026)
-  { name: "Company Distilling Single Barrel, Cherry Wood Finish", type: "whiskey", pick: true, isNew: true, details: ["Tennessee Whiskey", "Cherry Wood Finish", "127.6 Proof"], price: "$69.99", photo: "company-cherry-wood.jpg", photo2: "company-cherry-wood-signed.jpg", search: "Company Distilling" },
-  { name: "Rare Character Single Barrel, Kentucky Straight Bourbon", nickname: "T.A.S.S.A.", type: "bourbon", pick: true, isNew: true, details: ["11 Yr 1 Mo", "118.7 Proof", "Cask Strength"], price: "$109.99", photo: "rare-character-tassa.jpg", search: "Rare Character" },
-  { name: "Blue Note Honey Rye Cask", type: "rye", pick: true, isNew: true, details: ["Honey Barrel Finish", "120.3 Proof", "Cask Strength"], price: "$69.99", photo: "blue-note-honey-rye.jpg", search: "Blue Note" },
-  { name: "Bardstown Bourbon Co. Wheated Single Barrel", nickname: "Bardstown Boujee", type: "bourbon", pick: true, isNew: true, details: ["Wheated", "127.6 Proof"], price: "$79.99", photo: "bardstown-boujee.jpg", search: "Bardstown Bourbon" },
+  { name: "Company Distilling Single Barrel, Cherry Wood Finish", type: "whiskey", pick: true, isNew: true, points: "10x Points", details: ["Tennessee Whiskey", "Cherry Wood Finish", "127.6 Proof"], price: "$69.99", photo: "company-cherry-wood.jpg", photo2: "company-cherry-wood-signed.jpg", search: "Company Distilling" },
+  { name: "Rare Character Single Barrel, Kentucky Straight Bourbon", nickname: "T.A.S.S.A.", type: "bourbon", pick: true, isNew: true, points: "10x Points", details: ["11 Yr 1 Mo", "118.7 Proof", "Cask Strength"], price: "$109.99", photo: "rare-character-tassa.jpg", search: "Rare Character" },
+  { name: "Blue Note Honey Rye Cask", type: "rye", pick: true, isNew: true, points: "10x Points", details: ["Honey Barrel Finish", "120.3 Proof", "Cask Strength"], price: "$69.99", photo: "blue-note-honey-rye.jpg", search: "Blue Note" },
+  { name: "Bardstown Bourbon Co. Wheated Single Barrel", nickname: "Bardstown Boujee", type: "bourbon", pick: true, isNew: true, points: "10x Points", details: ["Wheated", "127.6 Proof"], price: "$79.99", photo: "bardstown-boujee.jpg", search: "Bardstown Bourbon" },
 
   { name: "Chicken Cock", type: "bourbon", pick: true, details: ["5 Yr 2 Mo", "121.34 Proof", "90 Bottles"], price: "$59.99", photo: "chicken-cock.jpg", search: "Chicken Cock" },
   { name: "Sagamore Barrel Select", type: "rye", pick: true, details: ["9 Year", "110 Proof", "186 Bottles"], price: "$64.99", photo: "sagamore-barrel-select.jpg", search: "Sagamore" },

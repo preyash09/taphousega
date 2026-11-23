@@ -102,7 +102,9 @@
     list.forEach(function (b) { box.appendChild(card(b)); });
   }
 
-  render($(".js-bonus"), window.BONUS_BOTTLES || []);
+  // Bonus section: any pick below that has points shows here first, then the bonus list
+  var pickBonus = (window.SINGLE_BARRELS || []).filter(function (b) { return b.points && !b.soldOut; });
+  render($(".js-bonus"), pickBonus.concat(window.BONUS_BOTTLES || []));
 
   // Single barrels with filters
   var barrels = window.SINGLE_BARRELS || [];
