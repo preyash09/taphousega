@@ -111,6 +111,7 @@ p { text-wrap: pretty; }
 .bday { display: grid; gap: 36px; align-items: center; }
 .bday-copy p { color: #e6dfd2; max-width: 52ch; }
 .bday-copy .btn { margin-top: 10px; }
+.points-note { font-size: 13px; color: #cfc6b6 !important; border-left: 2px solid var(--gold); padding-left: 10px; margin-top: 18px; }
 .ladder { list-style: none; padding: 22px; margin: 0; border-radius: var(--radius); background: rgba(255,255,255,.05); border: 1px solid rgba(224,189,106,.25); display: grid; gap: 12px; }
 .ladder li { display: grid; grid-template-columns: 78px 1fr; align-items: center; gap: 4px 12px; }
 .ladder-place { font-weight: 700; color: var(--gold-hi); font-size: 14px; }
