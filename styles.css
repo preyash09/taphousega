@@ -298,20 +298,3 @@ html.age-ok .agegate { display: none; }
 .agegate-error { margin: 14px 0 0; color: #ffb4a6; font-size: 14px; font-weight: 500; }
 .agegate-form .btn { width: 100%; margin-top: 18px; }
 .agegate-fine { margin: 16px 0 0; font-size: 12px; color: #8f8676; }
-
-/* ---------- Sign-up offer ---------- */
-.join-card {
-  display: grid; gap: 20px; align-items: center;
-  background: var(--ink); color: #f3ede2;
-  border: 1px solid rgba(201, 162, 75, 0.35); border-radius: 20px;
-  padding: 28px 22px;
-}
-.join-card h2 { color: #fff; margin: 4px 0 10px; }
-.join-card p { margin: 0 0 10px; color: #d8d1c3; }
-.join-card .eyebrow { color: var(--gold-hi); }
-.join-fine { font-size: 13px; color: #9d9483 !important; margin: 0 !important; }
-.join-card .btn { width: 100%; }
-@media (min-width: 700px) {
-  .join-card { grid-template-columns: 1fr auto; padding: 36px 40px; gap: 32px; }
-  .join-card .btn { width: auto; white-space: nowrap; }
-}
